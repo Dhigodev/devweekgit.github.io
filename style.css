@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: var(--gray2);
+  background-color: #a0d9ff;;
 }
 
 .resume-contents {
@@ -106,7 +106,7 @@ body {
   padding: .4rem 0;
   display: flex;
   align-items: center;
-  color: var(--gray);
+  color: var(--wht);
   letter-spacing: 1px;
   font-size: 18px;
   padding-left: 1.5rem;
@@ -116,7 +116,6 @@ body {
 .references ul li i {
   padding-right: 1rem;
   font-size: 18px;
-  color: #2E86C1;
 }
 
 .skills ul {
@@ -124,7 +123,7 @@ body {
 }
 .skills ul li p {
   padding: .4rem 0;
-  color: var(--gray);
+  color: var(--wht);
   font-size: 18px;
   letter-spacing: 1px;
   display: flex;
@@ -250,6 +249,12 @@ body {
   .resume-contents {
       grid-template-columns: repeat(1, 1fr);
   }
+  .left-section {
+    border-radius: 60px 60px 0px 0px;
+  }
+  .right-section {
+    border-radius: 0px 0px 60px 60px;
+  }
 }
 
 @media screen and (max-width:390px) {
@@ -257,6 +262,13 @@ body {
       width: 100%;
       margin: 0 auto;
   }
+  .left-section {
+    border-radius: 0px;
+  }
+  .right-section {
+    border-radius: 0px;
+  }
+  
 
   .name {
       font-size: 20px;
